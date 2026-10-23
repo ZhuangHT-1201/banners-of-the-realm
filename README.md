@@ -2,6 +2,10 @@
 
 ### 山河烽烟 · 宋金风云
 
+[![Deploy to GitHub Pages](https://github.com/ZhuangHT-1201/banners-of-the-realm/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ZhuangHT-1201/banners-of-the-realm/actions/workflows/deploy-pages.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-d5b56d.svg)](LICENSE)
+[![Node.js 20+](https://img.shields.io/badge/node-20%2B-77986e.svg)](package.json)
+
 An open-source, single-player browser RTS set during the Song–Jin War of 1140. Build a stronghold, gather resources, advance through three eras, and command armies across a stylized Central Plains battlefield.
 
 一款可直接在浏览器中游玩的单机即时战略游戏。以绍兴十年（1140）宋金郾城之战为历史舞台，在虚构化战场上经营城邦、推进时代、编成军队并攻破敌营。
@@ -28,6 +32,12 @@ An open-source, single-player browser RTS set during the Song–Jin War of 1140.
 
 <p align="center">
   <img src="screenshots/victory-1600.png" alt="Victory screen after destroying the enemy town center" width="92%" />
+</p>
+
+The in-game **Historical Codex** explains the Song–Jin setting, factions, units, economy, and controls without leaving the battlefield.
+
+<p align="center">
+  <img src="screenshots/codex-1600.png" alt="The in-game historical codex" width="92%" />
 </p>
 
 ## Play Locally
@@ -108,7 +118,9 @@ screenshots/         README screenshots
 
 ## Contributing
 
-Issues and pull requests are welcome. Keep changes focused, preserve the no-assets-required setup, and describe any balance or historical-design impact in the pull request.
+Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Changes should preserve the zero-download-assets setup and describe any balance or historical-design impact.
+
+Maintainer: [@ZhuangHT-1201](https://github.com/ZhuangHT-1201). The repository deliberately has no Cursor or automated-agent collaborator accounts.
 
 ## License
 
