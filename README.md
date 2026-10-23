@@ -50,6 +50,12 @@ npm run preview
 
 The built entry is `dist/rts.html`.
 
+Run the camera regression tests with:
+
+```powershell
+npm test
+```
+
 ## Controls
 
 | Action | Input |
@@ -96,6 +102,7 @@ src/world.js         Procedural world generation
 src/ui.js            HUD, codex, menus, and command interface
 src/data.js          Factions, eras, units, buildings, and research
 src/audio.js         Procedural Web Audio sound
+tests/               Node.js regression tests
 screenshots/         README screenshots
 ```
 

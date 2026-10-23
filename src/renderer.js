@@ -98,11 +98,9 @@ export class Renderer {
   }
 
   panByPixels(dx, dy) {
-    const { zoom } = this.camera;
-    const worldDX = (dx / ((TILE_W / 2) * zoom) + dy / ((TILE_H / 2) * zoom)) / 2;
-    const worldDY = (dy / ((TILE_H / 2) * zoom) - dx / ((TILE_W / 2) * zoom)) / 2;
-    this.camera.x -= worldDX;
-    this.camera.y -= worldDY;
+    const delta = calculateCameraPan(dx, dy, this.camera.zoom);
+    this.camera.x += delta.x;
+    this.camera.y += delta.y;
     this.clampCamera();
   }
 
@@ -1977,6 +1975,13 @@ export class Renderer {
   }
 }
 
-function len(a) {
-  return Math.hypot(a.x, a.y);
+/**
+ * Converts a screen-space camera movement into the isometric world space.
+ * Dragging right pans the view right; dragging up pans the view up.
+ */
+export function calculateCameraPan(dx, dy, zoom) {
+  return {
+    x: (dx / ((TILE_W / 2) * zoom) + dy / ((TILE_H / 2) * zoom)) / 2,
+    y: (dy / ((TILE_H / 2) * zoom) - dx / ((TILE_W / 2) * zoom)) / 2,
+  };
 }

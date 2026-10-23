@@ -28,6 +28,7 @@
   "scripts": {
     "start": "vite --host 127.0.0.1 --open /rts.html",
     "dev": "vite --host 127.0.0.1 --open /rts.html",
+    "test": "node --test tests/*.test.mjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --open /rts.html"
   },
