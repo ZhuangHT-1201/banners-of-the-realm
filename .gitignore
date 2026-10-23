@@ -3,15 +3,6 @@ dist/
 .vite/
 *.log
 
-# Files from the separate local prototype that share this workspace.
-/index.html
-/data.js
-/game.js
-/styles.css
-/hanmo-archive/
-/start-game.bat
-/game-preview.png
-
 # Local visual QA captures; the four README screenshots stay versioned.
 screenshots/*
 !screenshots/final-menu-1366.png
