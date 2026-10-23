@@ -1,0 +1,38 @@
+{
+  "name": "banners-of-the-realm",
+  "version": "1.0.0",
+  "description": "An open-source browser real-time strategy game set during the 1140 Song-Jin War.",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "real-time-strategy",
+    "browser-game",
+    "canvas",
+    "song-dynasty",
+    "jin-dynasty",
+    "history",
+    "vite"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhuangHT-1201/banners-of-the-realm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZhuangHT-1201/banners-of-the-realm/issues"
+  },
+  "homepage": "https://ZhuangHT-1201.github.io/banners-of-the-realm/",
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --open /rts.html",
+    "dev": "vite --host 127.0.0.1 --open /rts.html",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --open /rts.html"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1",
+    "vite": "^7.1.12"
+  }
+}

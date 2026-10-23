@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vite/
+*.log
+
+# Local visual QA captures; the four README screenshots stay versioned.
+screenshots/*
+!screenshots/final-menu-1366.png
+!screenshots/final-game-1600.png
+!screenshots/battle-1600.png
+!screenshots/victory-1600.png
